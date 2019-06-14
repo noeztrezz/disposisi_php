@@ -1,0 +1,12 @@
+BEGIN
+UPDATE barang
+	SET stok = stok - NEW.qty
+	WHERE id = NEW.barang_id;
+END
+
+BEGIN
+	UPDATE v_jumlah
+    SET jumlahuang = jumlahuang + NEW.total;
+END
+
+2kqt8-hv27p-gttv9-2wbvv-m7x96
